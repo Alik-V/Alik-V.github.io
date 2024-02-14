@@ -70,17 +70,16 @@ kramdown:
   syntax_highlighter: rouge
 
 defaults:
+ - 
+    scope:
+      path: "wiki"
+    values:
+      permalink: /:basename
  -
     scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
     values:
-      layout: "git-wiki-bs-united"
- -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "git-wiki-bs-united"
+      layout: "git-wiki-default"
  -
     scope:
       path: ""
